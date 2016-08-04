@@ -52,6 +52,7 @@ end
 ```
 
 By including `Juno.service` you will get the following:
+
 1. A `.call` class method with wildcard arity that will instantiate your class and pass all args to your `call` method.
 2. `attr_reader` for `params` and `errors`
 3. A `_params` method to unwrap your params if they are still an instance of `StrongParams`.
