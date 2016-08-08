@@ -1,9 +1,9 @@
 module Juno
   module ServiceBuilder
     extend ActiveSupport::Concern
-    
+
     included do
-      attr_reader :errors, :params
+      attr_reader :params
     end
 
     module ClassMethods
@@ -11,7 +11,6 @@ module Juno
         new(*args).call
       end
     end
-  
 
     def errors
       @errors ||= []
