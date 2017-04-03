@@ -13,7 +13,8 @@ module Juno
     end
 
     def errors
-      @errors ||= []
+      @errors = (@errors || [])
+      return @errors
     end
 
     def _params(params)
